@@ -15,10 +15,10 @@ app.use(express.static(path.join(__dirname, "public")));
  * a2s: query port (Steam query / A2S)
  */
 const SERVERS = [
-  { id: "EU1", name: "Shadow Elite EU1", ip: "151.80.33.213", connectPort: 2002, a2sPort: 17779 },
-  { id: "EU2", name: "Shadow Elite EU2", ip: "151.80.33.213", connectPort: 2003, a2sPort: 17778 },
-  { id: "EU3", name: "Shadow Elite EU3", ip: "37.187.135.120", connectPort: 2003, a2sPort: 17778 },
-  { id: "EU4", name: "Shadow Elite EU4", ip: "37.187.135.120", connectPort: 2004, a2sPort: 17777 },
+  { id: "EU1", name: "Shtufffs Arma Server", ip: "420.69.67.420", connectPort: 2002, a2sPort: 17777 },
+  { id: "<ID Here>", name: "<Server name here>", ip: "<Server IP here>", connectPort: /** Game port */, a2sPort: /** A2S port */ },
+  { id: "<ID Here>", name: "<Server name here>", ip: "<Server IP here>", connectPort: /** Game port */, a2sPort: /** A2S port */ },
+  { id: "<ID Here>", name: "<Server name here>", ip: "<Server IP here>", connectPort: /** Game port */, a2sPort: /** A2S port */ },
 ];
 
 // Query ONE server
