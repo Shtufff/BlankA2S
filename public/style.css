@@ -1,0 +1,307 @@
+/* ============
+
+    Body
+
+   ============
+*/
+
+body { 
+    background-color: #000000; 
+    font-family: system-ui, Arial; 
+    margin: 24px;
+
+  }
+
+
+/* ============
+
+    Nav bar
+
+   ============
+*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    margin-top: -10px;
+    margin-left: 55px;
+
+  }
+
+/* Deals with ul element */
+.nav ul {
+    list-style: none;
+    display: flex;
+    font-family: system-ui, Arial; 
+    padding: 0;
+    margin: 0;
+    
+  }
+
+/* Deals with li element */
+.nav li {
+    color: #fff;
+    text-decoration: none;
+    font-family: system-ui, Arial; 
+    padding: 25px;
+    margin: 0;
+
+  }
+
+/* Deals with link formatting in nav */
+.nav a {
+    text-decoration: none;
+    font-family: system-ui, Arial; 
+    color: #fff;
+    border: #fff;
+    font-weight: 700;
+    
+  }
+
+/* Deals with mouse hover on nav */
+.nav a:hover {
+    text-decoration: none;
+    background-color: #404040;
+    cursor:pointer;
+    font-family: system-ui, Arial; 
+    padding: 5px 10px;
+    border-radius: 10px; 
+    border: 1px solid #fff; 
+
+  }
+
+
+/* ============
+
+    Refresh button
+
+   ============
+*/
+
+button { 
+    background:#fff; 
+    cursor:pointer;
+    font-family: system-ui, Arial; 
+    padding: 8px 12px;
+    border-radius: 10px; 
+    border: 1px solid #ccc; 
+    
+  }
+
+
+/* ============
+
+    Logo and H1
+
+   ============
+*/
+
+/* Creates logo and makes it half size both height and width */
+.logo {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+/* Centers "Server Stats" H1 */
+.statsh1 { 
+    color: #fff;
+    margin: 0 0 12px;
+    text-align: center;
+
+   }
+
+
+/* ============
+
+    Grids
+
+   ============
+*/
+
+
+
+.top { 
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start; 
+    gap:12px;  
+
+   }
+
+/* Deals with "Map, connect text and checked status */   
+.muted { 
+    color: #fff;
+    text-decoration: none; 
+   }
+
+/* Connect button and IP text */
+.muted a.connect { 
+    font-family: system-ui, Arial;
+    text-decoration: none;
+    background: #e6f4ea;
+    border-color: #2da44e;
+    color: #2da44e; 
+    padding: 8px 12px;
+    border-radius: 10px; 
+    border: 1px solid; 
+   
+  }
+
+/* Deals with "Server name and player count */
+.grid { 
+    display: grid;
+    color: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px; 
+    
+}
+
+ /* Player count attributes */
+ .big { 
+    font-size: 34px;
+    font-weight: 900;
+    margin: 8px 0 2px;
+
+}
+
+/* Deals with card */
+.card { 
+    border: 2px solid;
+    border-radius: 14px; 
+    padding: 14px;
+
+ }
+
+/* Deals with connect button states */ 
+.card.online .connect {
+    border-color: #2da44e;
+    background: #e6f4ea;
+    color: #2da44e;
+
+  }
+
+/* Deals with connect button states */  
+.card.offline .connect {
+    border-color: #d1242f;
+    background: #fdecea;
+    color: #d1242f;
+    pointer-events: none;
+    cursor: not-allowed;
+
+  } 
+
+.row { 
+    display:flex; 
+    justify-content:space-between; 
+    padding: 4px 0; 
+
+}
+
+
+/* ============
+
+    Online Vars
+
+   ============
+*/
+
+/* Deals with online status */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid;
+
+  }
+  
+  /* Status dot */
+  .tag .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+  }
+  
+  /* Online */
+  .tag.online {
+    background: #e6f4ea;
+    border-color: #2da44e;
+    color: #2da44e;
+
+  }
+  
+  /* Online status dot */
+  .tag.online .dot {
+    background: #2da44e;
+
+  }
+  
+  /* Offline */
+  .tag.offline {
+    background: #fdecea;
+    border-color: #d1242f;
+    color: #d1242f;
+
+  }
+  
+  /* Offline status dot */
+  .tag.offline .dot {
+    background: #d1242f;
+
+  }
+
+  /* Online border color */
+  .online { 
+    border-color: #2e8b57; 
+
+  }
+
+  /* Offline border color */
+  .offline { 
+    border-color: #d1242f; 
+
+  }
+
+
+/* ============
+
+    Footer
+
+   ============
+*/
+
+
+.footer {
+    text-align: center;
+    color: #aaa;
+    margin-top: 40px;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+.footer a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
