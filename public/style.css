@@ -5,6 +5,7 @@
    ============
 */
 
+
 body { 
     background-color: #000000; 
     font-family: system-ui, Arial; 
@@ -19,6 +20,7 @@ body {
 
    ============
 */
+
 
 .nav {
     display: flex;
@@ -81,6 +83,7 @@ body {
    ============
 */
 
+
 button { 
     background:#fff; 
     cursor:pointer;
@@ -98,6 +101,7 @@ button {
 
    ============
 */
+
 
 /* Creates logo and makes it half size both height and width */
 .logo {
@@ -122,7 +126,6 @@ button {
 
    ============
 */
-
 
 
 .top { 
